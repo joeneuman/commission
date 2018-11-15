@@ -1,0 +1,14 @@
+body {
+    background-color: bisque;
+    margin: 20px;
+}
+
+
+
+.balance {
+ font-size: 20px;
+
+}
+#areaValue {
+  color: red
+}

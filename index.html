@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="percent=device-percent, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta property="og:image" content="http://joeneuman.com/fat/og.jpg" />
+    <title>Commission Split Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h3><u>Create Your Own Commission Split</u></h3>
+
+    <div class="balance"><strong>
+            <p>Must be = > 100: <output id="balValue">100</output><br /></p></strong>
+        </div>
+
+    <p><output id="freeValue">0 </output> FREE Transactions<br />
+        <input id="freeSlider" type="range" min="0" max="2" step="1" value="0" oninput="freeSliderChange(this.value)"
+            style="percent: 20px"></p>
+
+    <p> <output id="percentValue">5</output>% per Transaction<br />
+        <input id="percentSlider" type="range" min="0" max="50" step="1" value="5" oninput="percentSliderChange(this.value)"
+            style="percent: 20px"></p>
+
+    <p> $<output id="monthValue">0</output> per Month<br />
+        <input id="monthSlider" type="range" min="0" max="1000" step="10" value="0" oninput="monthSliderChange(this.value)"
+            style="percent: 20px"></p>
+
+    <p> $<output id="transactionValue">100</output> per Transaction<br />
+        <input id="transactionSlider" type="range" min="100" max="1000" step="10" value="100" oninput="transactionSliderChange(this.value)"
+            style="percent: 20px"></p>
+
+    <p> $<output id="capValue">12000</output> Cap<br />
+        <input id="capSlider" type="range" min="8000" max="12000" step="500" value="12000" oninput="capSliderChange(this.value)"
+            style="percent: 20px"></p>
+
+
+    
+    <hr>
+
+    <p> <output id="numValue">20</output> Transaction Goal<br />
+        <input id="numSlider" type="range" min="5" max="50" step="1" value="20" oninput="numSliderChange(this.value)"
+            style="percent: 20px"></p>
+
+    <p> $<output id="avGciValue">5000</output> Average GCI<br />
+        <input id="avGciSlider" type="range" min="1000" max="30000" step="500" value="5000" oninput="avGciSliderChange(this.value)"
+            style="percent: 20px"></p>
+
+    <p> GCI: $<output id="gciValue">100000</output><br /></p>
+    <div class="balance"><strong>
+    <p>% Paid: <output id="percValue">7</output>%<br /></p></strong>
+</div>
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
