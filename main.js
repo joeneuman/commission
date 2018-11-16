@@ -33,7 +33,7 @@ function updateAreaValue() {
     capN = 0;
   } else {
     if (cap >= 11000) {
-      capN = -10;
+      capN = -5;
     } else {
       if (cap >= 10000) {
         capN = -20;
